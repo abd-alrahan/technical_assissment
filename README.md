@@ -28,10 +28,8 @@ This is a technical assessment submission showcasing professional frontend devel
 ## 📁 Project Structure
 
 ```
-frontend_assessment/
+technical_assessment/
 ├── client/
-│   ├── public/
-│   │   └── favicon.ico
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── auth/
@@ -73,22 +71,22 @@ frontend_assessment/
 ### Prerequisites
 
 - Node.js 18+
-- pnpm (recommended) or npm
+- npm
 
 ### Installation
 
 ```bash
 # Install dependencies
-pnpm install
+npm install
 
 # Start development server
-pnpm dev
+npm dev
 
 # Build for production
-pnpm build
+npm build
 
 # Preview production build
-pnpm preview
+npm preview
 ```
 
 The development server will start at `http://localhost:3000/`
@@ -200,6 +198,7 @@ Password: emilyspass
 ### Authentication State
 
 Managed via `AuthContext`:
+
 - `user`: Current authenticated user
 - `token`: Authentication token
 - `isAuthenticated`: Boolean flag
@@ -209,6 +208,7 @@ Managed via `AuthContext`:
 ### Table State
 
 Managed locally in `ProductsTable`:
+
 - `columns`: Current column order
 - `filters`: Active filters per column
 - `sortColumn`: Currently sorted column
@@ -224,6 +224,7 @@ The application uses the DummyJSON API for demonstration:
 - **Products Endpoint**: `https://dummyjson.com/products`
 
 Test with:
+
 ```
 Username: emilys
 Password: emilyspass
@@ -288,6 +289,7 @@ Password: emilyspass
 ## 📦 Dependencies
 
 Key dependencies:
+
 - `react`: UI library
 - `react-dom`: React DOM rendering
 - `wouter`: Lightweight routing
@@ -303,7 +305,7 @@ The application is built with Vite and can be deployed to any static hosting:
 
 ```bash
 # Build for production
-pnpm build
+npm build
 
 # Output in dist/ directory
 ```
